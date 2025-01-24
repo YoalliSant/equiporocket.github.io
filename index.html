@@ -1,39 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>EquipoTegnWeb1</title>
-</head>
-<body>
-    <br>
-    <br>    
-    <p>Tecnologías  Web  Primavera  2023</p>
-    <br> 
-    <h1><b>E Q U I P O</b></h1>
-    <h1><b>R O C K E T</b></h1>
-     
-    <div class="box1">
-    <center><h2>Integrantes:</h2></center>
-        <ol>
-            <li>Mariana Álvarez Enriquez</li>
-            <li>Kevin Josaphat Bañuelos Camaño</li>
-            <li>Mauricio Montesinos Barroso</li>
-            <li>Martin Alejandro Ojeda Jiménez</li>
-            <li>Yoalli Itzae Santos Vásquez</li>
-        </ol>
-     </div> 
-     
-    <div class="boton">
-    <center><button onclick="window.modal1.showModal();">BIENVENIDA</button></center>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-        <dialog id="modal1">
-            <h3>¡BIENVENIDOS!</h3>
-              <p>Bienvenidos al curso de Tecnologías Web</p>
-            <button onclick="window.modal1.close();">Cerrar</button>
-          </dialog>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-</body>
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- ContactoIcons -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" href="https://fonts.google.com/specimen/Montserrat">
+        <title>Rian Soluciones</title>
+        <link rel="icon" type="image/png" href="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png">
+    </head>
+
+    <header class="header-bg">
+        <!----- BARRA CON LOGO ----->
+        <div class="container-fixed">
+            <center>
+            <table class="table-borderless">
+                <tbody>
+                    <tr>
+                      <td><img src="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png" style="width: 25%;"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td style="text-align: center;">
+                        <input type="button" class="w3-btn w3-round-xxlarge bContact" value="Contactanos">
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
+        </div>
+
+        <!----- FORMULARIO ----->
+        <div class="w3-row">
+            <div class="w3-container w3-half">
+                <div class="container mt-3 form1">
+                    <center><h2>Contactanos</h2></center>
+                        
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@email.com" name="email" required>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="num" class="form-label">Número:</label>
+                            <input type="text" class="form-control" id="num" placeholder="000 000 00 00" name="num" required>
+                        </div>
+                        <button type="submit" class="w3-btn w3-round-xxlarge bContact">Enviar</button> 
+                    </form>
+                </div>                  
+            </div>
+        <!----- TEXTO DE HEADER ----->
+            <div class="w3-container w3-half">
+                <h1><b>Entendemos tus necesidades,
+                <span class="yellow">Creamos soluciones</b></span>
+                <p><b>Nuestro objetivo es lograr más con menos, siempre entender tus necesidades y proponer 
+                        la mejor solución que permita cumplirlas.</b></p>
+            </div>
+        </div>   
+    </header>
+
+    <body>
+        <br>
+        <!----- NUESTRA OFERTA ----->
+        <div class="w3-row">
+            <div class="w3-container w3-half oferta">
+                <h2>Nuestra Oferta</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="https://riansoluciones.com/"><button type="submit" class="w3-btn w3-round-xxlarge">Ver más</button></a>
+            </div>
+            <div class="w3-container w3-half">
+                <div class="video-container">
+                    <video width="100%" height="auto" controls>
+                      <source src="https://www.youtube.com/watch?v=13sIg8aoYyE" type="video/mp4">
+                      Tu navegador no soporta el formato de video.
+                    </video>
+                  </div>
+            </div>
+        </div>
+        
+        <!----- SOBRE NOSOTROS ----->
+        <div class="about w3-container">
+            <center>
+            <div class="about_text">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            </center>
+        </div>
+        
+        <!----- ¿POR QUE ELEGIRNOS? ----->
+        <div class="elg">
+            <div class="w3-row">
+                <div class="w3-container w3-half">
+                    <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/fb5b948/2147483647/strip/true/crop/620x349+0+58/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2021%2F04%2Fcasas-de-los-mas-ricos-mexico-casa-blanca.jpeg" 
+                    style="width: 100%; height: auto;">   
+                </div>
+                <div class="col">
+                    <h2>¿Por qué elegirnos?</h2>
+                    <dl>
+                        <dt>✔️ Experiencia y profesionalismo.</dt>
+                        <dt>✔️ Experiencia y profesionalismo.</dt>
+                        <dt>✔️ Materiales de alta calidad.</dt>
+                        <dt>✔️ Entrega puntual garantizada.</dt>
+                        <dt>✔️ Diseño personalizado.</dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <!----- CONSTRUIR MI TERRENO ----->
+        <div class="w3-row">
+            <div class="w3-container">
+                <center>
+                <h2>
+                    ¿Cuanto <span class="yellow">cuesta construir</span> en mi terreno?
+                </h2>                  
+                <br>
+                <div class="video-container2">
+                    <video width="50%" height="auto" controls>
+                      <source src="https://www.youtube.com/watch?v=13sIg8aoYyE" type="video/mp4">
+                      Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+                </center>
+            </div>
+        </div>
+
+        <br>
+        <!----- NUESTROS PROYECTOS ----->
+        <div class="galery">
+            <center>
+            <h2>Nuestros Proyectos</h2>
+            <div class="w3-row">
+                <div class="w3-third w3-container">
+                    <div class="card mx-auto mb-3 image-effect">
+                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGii2iNqRrEZzlcM0DZDbYz7lQzVQf1t1FWA&s" 
+                        alt="Card image" style="width: 100%;">
+                        <div class="card-body text-center">
+                        <div class="card-body">
+                        <h4 class="card-title">Proyecto 1</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="card mx-auto mb-3 image-effect">
+                        <img class="card-img-top" src="https://www.rentaoventa.com/blog-inmobiliario/wp-content/uploads/2021/08/comprar-casa-en-el-estado-de-mexico.jpg" 
+                        alt="Card image" style="width: 100%;">
+                        <div class="card-body text-center">
+                        <div class="card-body">
+                        <h4 class="card-title">Proyecto 2</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="card mx-auto mb-3 image-effect">
+                        <img class="card-img-top" src="https://images.adsttc.com/media/images/6424/6702/ce5e/6c01/708c/314a/newsletter/casa-tome-mxtad-plus-tulugax_1.jpg?1680107332"
+                        alt="Card image" style="width: 100%;">
+                        <div class="card-body text-center">
+                        <div class="card-body">
+                        <h4 class="card-title">Proyecto 3</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://riansoluciones.com/galeria-de-proyectos/"><button type="submit" class="w3-btn w3-round-xxlarge">Ver más</button></a>
+            </center>
+        </div>
+
+        <br>
+        <!----- OPINIÓN CLIENTES ----->
+        <div class="clientes">
+            <h2>
+                La <span class="yellow">opinión</span> de nuestros 
+                <span class="yellow">clientes</span>
+            </h2>
+            <div class="w3-row">
+                <div class="w3-third w3-container">
+                    <div class="card mx-auto mb-3 w3-theme-l1">
+
+                        <img class="card-img-top w3-circle" src="https://cdn-icons-png.flaticon.com/512/5046/5046859.png" 
+                        alt="Card image" style="width: 60%;">
+
+                        <div class="card-body text-center">
+                        <div class="card-body">
+                        <h4 class="card-title">Cliente 1</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="card mx-auto mb-3">
+
+                        <img class="card-img-top w3-circle" src="https://cdn0.expertoanimal.com/es/posts/5/8/1/cuidados_de_una_capibara_20185_orig.jpg" 
+                        alt="Card image" style="width: 70%;">
+
+                        <div class="card-body text-center">
+                        <div class="card-body">
+                        <h4 class="card-title">Cliente 2</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="card mx-auto mb-3 w3-theme-l1">
+
+                        <img class="card-img-top w3-circle" src="https://cdn-icons-png.flaticon.com/512/5046/5046859.png"
+                        alt="Card image" style="width: 60%;">
+
+                        <div class="card-body text-center">
+                        <div class="card-body">
+                        <h4 class="card-title">Cliente 3</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----- PANEL DE DATOS ----->
+        <div class="panel">
+            <div class="w3-row">
+                <div class="w3-third w3-container w3-panel">
+                    <h1>+180</h1>
+                    <p>PROYECTOS TERMINADOS</p>
+                </div>
+                <div class="w3-third w3-container w3-panel w3-leftbar w3-border-white">
+                    <h1>+13</h1>
+                    <p>AÑOS DE EXPERIENCIA</p>
+                </div>
+                <div class="w3-third w3-container w3-panel w3-leftbar w3-border-white">
+                    <h1>+30</h1>
+                    <p>COLABORADORES</p>
+                </div>
+            </div>
+        </div>
+
+        <!----- FORMULARIO DE CONTACTO FINAL ----->
+        <div class="end">
+            <div class="w3-row">
+                <div class="text w3-half w3-container ">
+                    <h1>
+                    <b>¿Necesitas una cotización?
+                    <span class="yellow">Contactanos!</span></b>
+                    </h1>
+                </div>
+                <div class="w3-half w3-container form2">
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@email.com" name="email" required>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="num" class="form-label">Número:</label>
+                            <input type="text" class="form-control" id="num" placeholder="000 000 00 00" name="num" required>
+                        </div>
+                        <center>
+                        <button type="submit" class="w3-btn w3-round-xxlarge bContact">Enviar</button> 
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!----- FOOTER ----->
+    <footer>
+        <div class="w3-container w3-black">
+            <br>
+                <center><img src="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png" style="width: 10%;"></center>
+            <div class="w3-row">
+                <div class="w3-third w3-container">
+                    <center>
+                    <p><b>Otros servicios</b></p></a>
+                    <p><a href="https://riansoluciones.com/">Remodelación
+                    <br>Inmobiliaria</a></p>
+                    </center>
+                </div>
+                <div class="w3-third w3-container">
+                    <p>
+                        <i class="fas fa-map-marker-alt" ></i>C. 14 Sur 1101, Barrio de Analco, Puebla, Pue.
+                        <br><i class='fas fa-phone'></i> Tel <a href="tel:+2222465385">222 246 5385</a> Cel <a href="tel:+2213565304">221 356 5304</a>
+                        <br><i class='far fa-envelope-open'></i> <a href="mailto:contacto@riansoluciones.com">contacto@riansoluciones.com</a>
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <center>
+                    <br>
+                    <a href="https://www.instagram.com/riansoluciones/"><img src="https://riansoluciones.com/wp-content/uploads/2023/08/instagram-2.png" style="width: 10%; margin-right: 3%;"></a>
+
+                    <a href="https://www.facebook.com/riansoluciones"><img src="https://riansoluciones.com/wp-content/uploads/2023/08/facebook-2.png" style="width: 10%; margin-right: 3%;"></a>
+
+                    <a href="https://www.youtube.com/channel/UC0mhnen-j2heW1OD36TzG1Q"><img src="https://riansoluciones.com/wp-content/uploads/2023/08/youtube-3.png" style="width: 9%; margin-right: 3%;"></a>
+
+                    <a href="https://www.tiktok.com/@riansoluciones"><img src="https://riansoluciones.com/wp-content/uploads/2023/08/tik-tok-2.png" style="width: 10%;"></a>
+                    </center>
+                </div>
+            </div>
+            <center><p>© 2025 Rian Soluciones.</p></center>
+        </div>
+    </footer>
+
+</html>
