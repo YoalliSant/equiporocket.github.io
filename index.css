@@ -37,11 +37,21 @@ body p{
   position: relative;
   z-index: 2;
 }
+/*.container-fixed { barra de navegación en toda la pag web 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.63);
+}*/
 .w3-row{
   margin: 2%;
 }
+
 header .w3-row { 
-  display: flex;
+  /*display: flex;*/
   align-items: center;  
   justify-content: center; 
   text-align: center;
@@ -64,7 +74,7 @@ header .w3-row {
   background-color: #00b2ff;
 }
 .form1{ /*formulario de contacto Header */
-  width: 70%;
+  width: 80%;
   background-color: #ffffff;
   padding: 6%;
   border-radius: 10px;
@@ -136,7 +146,7 @@ h2{
   color: #ffffff;
 }
 .elg .w3-row {
-  display: flex;
+  /*display: flex;*/
   align-items: center;  
   justify-content: center; 
   text-align: center;
@@ -239,7 +249,7 @@ h2{
   background-color: #354a68;
   margin: 0;
   flex-wrap: wrap;
-  display: flex;
+  /*display: flex;*/
   align-items: center;  
   justify-content: center; 
   text-align: center;
