@@ -1,43 +1,282 @@
-body{
-    height:100hv;
-    background: #EDEEE9;
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital@0;1&display=swap');
+body,html {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+header{
+  font-family: 'Montserrat', sans-serif;
+}
+body p{
+  font-size: 16px;
+}
+.yellow {/* para textos amarillos */
+  color: #f8d50f; 
 }
 
-p{
-    color: rgb(8, 3, 3);
-    margin: 0 auto;
-    text-align: center;
-    font: 24px Constantia, Serif;
+/*-----HEADER FONDO-----*/
+.header-bg { /*imagen de fondo header*/
+  background: url('https://images.homify.com/v1608954518/p/photo/image/3712148/46e15bb8-fb25-4130-a814-2dd02eb93d7a.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.header-bg::before { /*capa semitransparente*/
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.63); 
+  z-index: 1;
+}
+.header-bg > * { /*contenido encima de la capa de opacidad */
+  position: relative;
+  z-index: 2;
+}
+/*.container-fixed { barra de navegación en toda la pag web 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.63);
+}*/
+.w3-row{
+  margin: 2%;
 }
 
-h1{
-    color: rgb(8, 3, 3);
-    margin: 0 auto;
-    text-align: center;
-    font: 45px Corbel Light, Serif;
+header .w3-row { 
+  /*display: flex;*/
+  align-items: center;  
+  justify-content: center; 
+  text-align: center;
+}
+.header-bg h1 { /*texto llamativo de header*/
+  font-family: 'Montserrat';
+  color: #ffffff;
+}
+.header-bg p{
+  color:#ffffff;
+  font-size: 16px;
 }
 
-.box1{
-    font:  18px 'champagne & limousines';
-    width: 300px;
-    height: 210px;
-    background: #a698c0;
-    position:absolute;
-    left: 520px;
-    top: 260px;
-    border-style: solid;
-
+/*-----FORMULARIO DE CONTACTO HEADER-----*/
+.bContact{ /*boton de Contacto y de formulario*/
+  background-color: #354a68;
+  color: #ffffff;
+}
+.bContact:hover{
+  background-color: #00b2ff;
+}
+.form1{ /*formulario de contacto Header */
+  width: 70%;
+  background-color: #ffffff;
+  padding: 6%;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+.form-control {
+  background-color: #efefef;  
+  color: #333;  
+  border: none; 
+}
+h2{ 
+  color: #354a68;
+  font-family: 'Montserrat';
+  font-weight: 600;
 }
 
-.boton{
-    position:absolute;
-    left: 605px;
-    top: 500px;
+/*-----NUESTRA OFERTA-----*/
+.oferta{
+  padding-left: 3%;
 }
-button{
-    background-color: #33cc77;
-    color: #fff;
-    padding: 0.25em 1.5em;
-    
+.oferta button{
+  background-color: #354a68;
+  color: #ffffff;
+}
+.oferta button:hover{
+  background-color: #00b2ff;
+}
+
+/*-----SOBRE NOSOTROS-----*/
+.about{
+  background: url('https://www.echeverrimontes.com/hubfs/Importancia%20de%20los%20planos.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.about::before { /*capa semitransparente*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(140, 166, 253, 0.39); 
+  z-index: 1;
+}
+.about > * { /*contenido encima de la capa de opacidad */
+  position: relative;
+  z-index: 2;
+}
+.about_text{
+  background-color: #ffffff;
+  margin: 2%;
+  width: 70%;
+  padding: 2%;
+}
+
+/*-----¿POR QUE ELEGIRNOS-----*/
+.elg{
+  background-color: #f8b602; 
+  width: 100%;
+  height: auto;
+  margin: 0%;
+  color: #ffffff;
+  font-size: 18px;
+}
+.elg h2{
+  color: #ffffff;
+}
+.elg .w3-row {
+  /*display: flex;*/
+  align-items: center;  
+  justify-content: center; 
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+.elg .w3-container{
+  flex: 1;
+  padding: 0;
+}
+
+/*-----NUESTROS PROYECTOS-----*/
+.galery{
+  background-color: #8fa4aa;
+  padding: 2%;
+}
+.galery h2{
+  color: #ffffff;
+  padding-bottom: 1%;
+}
+.card{
+  border: 8px solid #ffffff;
+  border-radius: 10px; 
+}
+.card h4{
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+.image-effect {/*efecto galeria de proyectos*/
+  transition: transform 0.3s, filter 0.3s;
+}
+.image-effect:hover {
+  transform: scale(1.1); 
+  filter: brightness(1.2); 
+}
+.galery button{
+  background-color: #354a68;
+  font-size: 20px;
+  color: #ffffff;
+}
+.galery button:hover{
+  background-color: #00b2ff;
+}
+
+/*-----CLIENTES-----*/
+.clientes{
+  text-align: center;
+  margin: 2%;
+}
+.clientes .card{
+  align-items: center;
+  background-color: #354a68;
+  color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.clientes img{
+  padding-top: 4%;
+}
+
+/*-----PANEL-----*/
+.panel{
+  background: url('https://blog.homie.mx/wp-content/uploads/2023/05/mejores-casas-de-arquitectura-modena-scaled.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  color:#ffffff;
+  text-align: center;
+  position: relative;
+
+}
+.panel::before { /*capa semitransparente*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 17, 70, 0.589); 
+  z-index: 1;
+}
+.panel > * { /*encima de la capa de opacidad*/
+  position: relative;
+  z-index: 2;
+}
+.panel h1{
+  font-family: "Anton", serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+.panel p{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/*-----FORMULARIO FINAL-----*/
+.end .w3-row {
+  background-color: #354a68;
+  margin: 0;
+  flex-wrap: wrap;
+  /*display: flex;*/
+  align-items: center;  
+  justify-content: center; 
+  text-align: center;
+}
+.end .w3-half {
+  flex: 1;
+}
+.text {
+  padding-left: 15%;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+.form2 {
+  background-color: #f8b602;
+  padding: 3%;
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+}
+  
+/*-----FOOTER-----*/
+footer{
+  color: #ffffff;
+}
+.fas{
+  margin-right: 2%;
+}
+.far{
+  margin-right: 2%;
 }
