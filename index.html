@@ -12,66 +12,66 @@
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- ContactoIcons -->
-        <link rel="stylesheet" type="text/css" href="index.css" href="https://fonts.google.com/specimen/Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" href="https://fonts.google.com/specimen/Montserrat">
         <title>Rian Soluciones</title>
         <link rel="icon" type="image/png" href="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png">
     </head>
 
     <header class="header-bg">
         <!----- BARRA CON LOGO ----->
-        <div class="container-fixed">
-            <center>
-            <table class="table-borderless">
-                <tbody>
-                    <tr>
-                      <td><img src="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png" style="width: 25%;"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td style="text-align: center;">
-                        <input type="button" class="w3-btn w3-round-xxlarge bContact" value="Contactanos">
-                    </td>
-                    </tr>
-                </tbody>
-            </table>
-            </center>
+        <div class="w3-top">
+            <div class="w3-bar w3-center nav">
+                <a href="" style="width:50%" class="w3-bar-item w3-mobile">
+                    <img src="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png" style="width: 15%;"></a>
+                <a href="#" style="width:50%" class="w3-bar-item w3-mobile">
+                    <input type="button" class="w3-btn w3-round-xxlarge bContact" value="Contáctanos"></a>
+            </div>
         </div>
 
-        <!----- FORMULARIO ----->
-        <div class="w3-row">
-            <div class="w3-container w3-half">
-                <div class="container mt-3 form1">
-                    <center><h2>Contactanos</h2></center>
-                        
-                    <form action="/action_page.php">
-                        <div class="mb-3 mt-3">
-                            <label for="name" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico:</label>
-                            <input type="email" class="form-control" id="email" placeholder="correo@email.com" name="email" required>
-                        </div>
-                        <div class="mb-3 mt-3">
-                            <label for="num" class="form-label">Número:</label>
-                            <input type="text" class="form-control" id="num" placeholder="000 000 00 00" name="num" required>
-                        </div>
-                        <button type="submit" class="w3-btn w3-round-xxlarge bContact">Enviar</button> 
-                    </form>
-                </div>                  
-            </div>
+
+
         <!----- TEXTO DE HEADER ----->
+        <div class="w3-row">
             <div class="w3-container w3-half">
                 <h1><b>Entendemos tus necesidades,
                 <span class="yellow">Creamos soluciones</b></span>
                 <p><b>Nuestro objetivo es lograr más con menos, siempre entender tus necesidades y proponer 
-                        la mejor solución que permita cumplirlas.</b></p>
+                        la mejor solución que permita cumplirlas.</b>
+                </p>
+                <a href="tel:+2222465385">
+                    <button type="submit" class="w3-btn w3-round-large btn"><i class='fas fa-phone'></i> Llámanos
+                    </button></a>
+                <a href="tel:+2213565304">
+                    <button type="submit" class="w3-btn w3-round-large btn"><i class="fa fa-whatsapp"></i> Contáctanos
+                    </button></a>
+            </div>
+            <div class="w3-container w3-half">
+
             </div>
         </div>   
     </header>
 
     <body>
-        <br>
+        <!----- PANEL DE DATOS ----->
+        <div class="panel">
+            <div class="w3-row">
+                <div class="w3-third w3-container w3-panel">
+                    <h1>+180</h1>
+                    <p>PROYECTOS TERMINADOS</p>
+                </div>
+                <div class="w3-third w3-container w3-panel w3-leftbar w3-border-white">
+                    <h1>+13</h1>
+                    <p>AÑOS DE EXPERIENCIA</p>
+                </div>
+                <div class="w3-third w3-container w3-panel w3-leftbar w3-border-white">
+                    <h1>+30</h1>
+                    <p>COLABORADORES</p>
+                </div>
+            </div>
+        </div>
+
         <!----- NUESTRA OFERTA ----->
         <div class="w3-row">
             <div class="w3-container w3-half oferta">
@@ -245,31 +245,13 @@
             </div>
         </div>
 
-        <!----- PANEL DE DATOS ----->
-        <div class="panel">
-            <div class="w3-row">
-                <div class="w3-third w3-container w3-panel">
-                    <h1>+180</h1>
-                    <p>PROYECTOS TERMINADOS</p>
-                </div>
-                <div class="w3-third w3-container w3-panel w3-leftbar w3-border-white">
-                    <h1>+13</h1>
-                    <p>AÑOS DE EXPERIENCIA</p>
-                </div>
-                <div class="w3-third w3-container w3-panel w3-leftbar w3-border-white">
-                    <h1>+30</h1>
-                    <p>COLABORADORES</p>
-                </div>
-            </div>
-        </div>
-
         <!----- FORMULARIO DE CONTACTO FINAL ----->
         <div class="end">
             <div class="w3-row">
                 <div class="text w3-half w3-container ">
                     <h1>
                     <b>¿Necesitas una cotización?
-                    <span class="yellow">Contactanos!</span></b>
+                    <span class="yellow">Contáctanos!</span></b>
                     </h1>
                 </div>
                 <div class="w3-half w3-container form2">
@@ -287,7 +269,7 @@
                             <input type="text" class="form-control" id="num" placeholder="000 000 00 00" name="num" required>
                         </div>
                         <center>
-                        <button type="submit" class="w3-btn w3-round-xxlarge bContact">Enviar</button> 
+                        <button type="submit" class="w3-btn w3-round-xxlarge">Enviar</button> 
                         </center>
                     </form>
                 </div>
@@ -297,7 +279,7 @@
 
     <!----- FOOTER ----->
     <footer>
-        <div class="w3-container w3-black">
+        <div class="w3-container">
             <br>
                 <center><img src="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png" style="width: 10%;"></center>
             <div class="w3-row">
