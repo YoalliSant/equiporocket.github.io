@@ -14,6 +14,9 @@ body p{
 .yellow {/* para textos amarillos */
   color: #f8d50f; 
 }
+.w3-row{
+  margin: 2%;
+}
 
 /*-----HEADER FONDO-----*/
 .header-bg { /*imagen de fondo header*/
@@ -46,10 +49,6 @@ body p{
   padding: 10px 0;
   background-color: rgba(0, 0, 0, 0.63);
 }*/
-.w3-row{
-  margin: 2%;
-}
-
 header .w3-row { 
   /*display: flex;*/
   align-items: center;  
@@ -145,6 +144,7 @@ h2{
 }
 .elg h2{
   color: #ffffff;
+  padding-top: 10%;
 }
 .elg .w3-row {
   /*display: flex;*/
@@ -259,6 +259,7 @@ h2{
   flex: 1;
 }
 .text {
+  padding-top: 10%;
   padding-left: 15%;
   color: #ffffff;
   margin: 0;
