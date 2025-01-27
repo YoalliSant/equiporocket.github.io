@@ -12,15 +12,33 @@ body p{
   font-size: 16px;
 }
 .yellow {/* para textos amarillos */
-  color: #f8d50f; 
+  color: #f2b452; 
 }
 .w3-row{
   margin: 2%;
 }
+h2{ 
+  color: #354a68;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+/*-----BARRA DE NAVEGACIÓN-----*/
+.nav{
+  background-color: #354a68;
+  align-items: center;
+}
+.bContact{ /*boton de Contacto y de formulario*/
+  background-color: #8fa4aa;
+  color: #ffffff;
+}
+.bContact:hover{
+  background-color: #00b2ff;
+}
 
 /*-----HEADER FONDO-----*/
 .header-bg { /*imagen de fondo header*/
-  background: url('https://images.homify.com/v1608954518/p/photo/image/3712148/46e15bb8-fb25-4130-a814-2dd02eb93d7a.jpg') no-repeat center center;
+  background: url('file://192.168.100.212/Compartir2/01%20Plan%20de%20Marketing%202024/Identidad%20Corporativa/Logos/Nuevo%20LOGO/WEB/Texturas%20WEB/Texturas-3-WEB.png');
   background-size: cover;
   position: relative;
   width: 100%;
@@ -28,27 +46,6 @@ body p{
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
-.header-bg::before { /*capa semitransparente*/
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.63); 
-  z-index: 1;
-}
-.header-bg > * { /*contenido encima de la capa de opacidad */
-  position: relative;
-  z-index: 2;
-}
-/*.container-fixed { barra de navegación en toda la pag web 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-  padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.63);
-}*/
 header .w3-row { 
   /*display: flex;*/
   align-items: center;  
@@ -57,39 +54,54 @@ header .w3-row {
 }
 .header-bg h1 { /*texto llamativo de header*/
   font-family: 'Montserrat';
-  color: #ffffff;
-  margin-top: 20%;
+  margin-top: 30%;
 }
 .header-bg p{
-  color:#ffffff;
   font-size: 16px;
 }
-
-/*-----FORMULARIO DE CONTACTO HEADER-----*/
-.bContact{ /*boton de Contacto y de formulario*/
+.header-bg button{
   background-color: #354a68;
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-bg button:hover{
+  background-color: #00b2ff;
   color: #ffffff;
 }
-.bContact:hover{
-  background-color: #00b2ff;
+
+/*-----PANEL-----*/
+.panel{
+  background: url('https://blog.homie.mx/wp-content/uploads/2023/05/mejores-casas-de-arquitectura-modena-scaled.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  color:#ffffff;
+  text-align: center;
+  position: relative;
+  margin-top: 0%;
 }
-.form1{ /*formulario de contacto Header */
-  width: 80%;
-  background-color: #ffffff;
-  padding: 6%;
-  border-radius: 10px;
-  font-size: 16px;
-  text-align: left;
+.panel::before { /*capa semitransparente*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 17, 70, 0.589); 
+  z-index: 2;
 }
-.form-control {
-  background-color: #efefef;  
-  color: #333;  
-  border: none; 
+.panel > * { /*encima de la capa de opacidad*/
+  position: relative;
+  z-index: 2;
 }
-h2{ 
-  color: #354a68;
-  font-family: 'Montserrat';
-  font-weight: 600;
+.panel h1{
+  font-family: "Anton", serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+.panel p{
+  font-size: 25px;
+  font-weight: 700;
 }
 
 /*-----NUESTRA OFERTA-----*/
@@ -135,7 +147,7 @@ h2{
 
 /*-----¿POR QUE ELEGIRNOS-----*/
 .elg{
-  background-color: #f8b602; 
+  background-color: #f2b452; 
   width: 100%;
   height: auto;
   margin: 0%;
@@ -211,40 +223,6 @@ h2{
   padding-top: 4%;
 }
 
-/*-----PANEL-----*/
-.panel{
-  background: url('https://blog.homie.mx/wp-content/uploads/2023/05/mejores-casas-de-arquitectura-modena-scaled.jpg') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  color:#ffffff;
-  text-align: center;
-  position: relative;
-
-}
-.panel::before { /*capa semitransparente*/
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(1, 17, 70, 0.589); 
-  z-index: 1;
-}
-.panel > * { /*encima de la capa de opacidad*/
-  position: relative;
-  z-index: 2;
-}
-.panel h1{
-  font-family: "Anton", serif;
-  font-size: 50px;
-  font-weight: 400;
-}
-.panel p{
-  font-size: 25px;
-  font-weight: 700;
-}
-
 /*-----FORMULARIO FINAL-----*/
 .end .w3-row {
   background-color: #354a68;
@@ -266,16 +244,21 @@ h2{
   text-align: center;
 }
 .form2 {
-  background-color: #f8b602;
+  background-color: #f2b452;
   padding: 3%;
   font-size: 16px;
   margin: 0;
   text-align: left;
 }
+.form2 button{
+  background-color: #354a68;
+  color: #ffffff;
+}
   
 /*-----FOOTER-----*/
 footer{
   color: #ffffff;
+  background-color: #9aa3ad;
 }
 .fas{
   margin-right: 2%;
