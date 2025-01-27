@@ -59,6 +59,7 @@ header .w3-row {
 .header-bg h1 { /*texto llamativo de header*/
   font-family: 'Montserrat';
   color: #ffffff;
+  margin-top: 20%;
 }
 .header-bg p{
   color:#ffffff;
