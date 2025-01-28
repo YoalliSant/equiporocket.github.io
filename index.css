@@ -23,10 +23,29 @@ h2{
   font-weight: 600;
 }
 
+.ir-arriba { /*Botón de desplazamiento hacia arriba */
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #00b2ff; 
+  color: white; 
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; 
+  z-index: 1000; 
+}
+.ir-arriba.show {
+  display: block;
+}
+
 /*-----BARRA DE NAVEGACIÓN-----*/
 .nav{
   background-color: #354a68;
   align-items: center;
+  z-index: 1000; 
 }
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
