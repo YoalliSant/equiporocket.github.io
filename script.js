@@ -1,23 +1,14 @@
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita la recarga de la página
-    
-    const formData = new FormData(this);
-
-    // Envía los datos a Formsubmit usando Fetch API
-    fetch("https://formsubmit.co/yoallisanto@gmail.com", {
-        method: "POST",
-        body: formData,
-    })
-    .then(response => {
-        if (response.ok) {
-            document.getElementById("success-message").style.display = "block"; // Muestra el mensaje de éxito
-            this.reset(); // Limpia el formulario
+$(document).ready(function(){
+    // Mostrar el botón cuando se haga scroll hacia abajo
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.ir-arriba').fadeIn(600); // Mostrar el botón
         } else {
-            alert("Hubo un error al enviar tu mensaje. Por favor, intenta de nuevo :(");
+            $('.ir-arriba').fadeOut(600); // Ocultar el botón
         }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        alert("Hubo un problema al enviar tu mensaje :(");
+    });
+    // Función para hacer scroll hacia arriba
+    $('.ir-arriba').click(function(){
+        $('body, html').animate({ scrollTop: 0 }, 1000); // Animación hacia arriba
     });
 });
