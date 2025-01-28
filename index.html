@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- ContactoIcons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="script.js"></script>
         <link rel="stylesheet" type="text/css" href="index.css" href="https://fonts.google.com/specimen/Montserrat">
         <title>Rian Soluciones</title>
         <link rel="icon" type="image/png" href="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png">
@@ -53,6 +56,13 @@
     </header>
 
     <body>
+        <!-- Botón para desplazarse hacia arriba -->
+        <a href="javascript:void(0);" class="ir-arriba" title="Volver arriba">
+            <span>      
+                <i class='fas fa-arrow-alt-circle-up' style='font-size:36px'></i>
+            </span>
+        </a>
+
         <!----- PANEL DE DATOS ----->
         <div class="panel">
             <div class="w3-row">
@@ -254,7 +264,7 @@
                     </h1>
                 </div>
                 <div class="w3-half w3-container form2">
-                    <form action="https://formsubmit.co/yoallisantos@gmail.com " method="POST">
+                    <form action="https://formspree.io/f/xzzdrgvn" method="POST">
                         <div class="mb-3 mt-3">
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" name="name" required>
@@ -268,7 +278,7 @@
                             <input type="text" class="form-control" id="num" placeholder="000 000 00 00" name="num" required>
                         </div>
                         <center>
-                            <button type="submit" class="w3-btn w3-round-xxlarge">Enviar</button> 
+                            <button type="submit" class="w3-btn w3-round-xxlarge">Enviar</button>
                         </center>
                     </form>
                 </div>                
