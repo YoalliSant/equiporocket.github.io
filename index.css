@@ -74,7 +74,7 @@ header .w3-row {
 }
 .header-bg h1 { /*texto llamativo de header*/
   font-family: 'Montserrat';
-  margin-top: 35%;
+  margin-top: 30%;
 }
 .header-bg p{
   font-size: 16px;
@@ -92,7 +92,7 @@ header .w3-row {
 }
 .sec1 img{
   width: 90%;
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 /*-----PANEL-----*/
