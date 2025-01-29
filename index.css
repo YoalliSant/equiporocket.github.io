@@ -50,7 +50,7 @@ h2{
 .nav img {
   width: 25%;
 }
-@media (max-width: 600px) { /* Para pantallas pequeñas */
+@media (max-width: 200px) { /* Para pantallas pequeñas */
   .nav img {
       width: 50%; /* Hace que el logo ocupe más espacio */
   }
