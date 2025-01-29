@@ -46,7 +46,10 @@ h2{
   background-color: #2f3a47;
   align-items: center;
   z-index: 1000; 
-  padding: 0%;
+}
+.nav img{
+  width: 40vw; 
+  max-width: 150px; 
 }
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
