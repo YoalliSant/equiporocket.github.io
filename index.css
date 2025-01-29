@@ -73,10 +73,11 @@ header .w3-row {
 }
 .header-bg h1 { /*texto llamativo de header*/
   font-family: 'Montserrat';
-  margin-top: 40%;
+  margin-top: 35%;
 }
 .header-bg p{
   font-size: 16px;
+  margin-top: 3%;
 }
 .header-bg button{
   background-color: #354a68;
@@ -87,6 +88,10 @@ header .w3-row {
 .header-bg button:hover{
   background-color: #00b2ff;
   color: #ffffff;
+}
+.sec1 img{
+  width: 90%;
+  padding-top: 25%;
 }
 
 /*-----PANEL-----*/
