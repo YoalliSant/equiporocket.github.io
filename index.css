@@ -46,6 +46,7 @@ h2{
   background-color: #354a68;
   align-items: center;
   z-index: 1000; 
+  padding: 0%;
 }
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
