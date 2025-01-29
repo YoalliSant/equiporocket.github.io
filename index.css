@@ -47,9 +47,13 @@ h2{
   align-items: center;
   z-index: 1000; 
 }
-.nav img{
-  width: 20vw; 
-  max-width: 150px; 
+.nav img {
+  width: 25%;
+}
+@media (max-width: 600px) { /* Para pantallas pequeñas */
+  .nav img {
+      width: 50%; /* Hace que el logo ocupe más espacio */
+  }
 }
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
