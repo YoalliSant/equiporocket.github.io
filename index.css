@@ -50,11 +50,6 @@ h2{
 .nav img {
   width: 25%;
 }
-@media (max-width: 200px) { /* Para pantallas pequeñas */
-  .nav img {
-      width: 50%; /* Hace que el logo ocupe más espacio */
-  }
-}
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
   color: #ffffff;
