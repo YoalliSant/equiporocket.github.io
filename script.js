@@ -12,3 +12,9 @@ $(document).ready(function(){
         $('body, html').animate({ scrollTop: 0 }, 1000); // Animación hacia arriba
     });
 });
+
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+}
