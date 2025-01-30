@@ -321,15 +321,36 @@ header .w3-row {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 800px; 
+  max-width: 800px;
   margin: auto;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
-video {
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  border-radius: 10px; 
+  height: 100%;
+  border: none;
 }
-  
+.video-container2 {
+  position: relative;
+  width: 100%;
+  max-width: 800px;  
+  margin: 0 auto;   
+  aspect-ratio: 16 / 9; 
+  background: #000;
+}
+.video-container2 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*-----FOOTER-----*/
 footer{
   color: #ffffff;
