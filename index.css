@@ -9,7 +9,7 @@ header{
   font-family: 'Montserrat', sans-serif;
 }
 body p{
-  font-size: 16px;
+  font-size: 17px;
 }
 .yellow {/* para textos amarillos */
   color: #f2b452; 
@@ -50,6 +50,7 @@ h2{
 .nav img {
   width: 20%;
 }
+
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
   color: #ffffff;
@@ -146,10 +147,14 @@ header .w3-row {
 
 /*-----SOBRE NOSOTROS-----*/
 .about{
-  background: url('https://www.echeverrimontes.com/hubfs/Importancia%20de%20los%20planos.png') no-repeat center center;
+  background: url('https://riansoluciones.com/wp-content/uploads/2023/02/pexels-pixabay-271667-scaled.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
   position: relative;
+}
+.about p{
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .about::before { /*capa semitransparente*/
   content: "";
@@ -172,21 +177,50 @@ header .w3-row {
   padding: 2%;
 }
 
-/*-----¿POR QUE ELEGIRNOS-----*/
+/*-----SUGERENCIAS-----*/
+.tips{
+  background-color: #354a68; 
+  width: 80%;
+  height: auto;
+  margin: 2%;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 2%;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+}
+.tips h2{
+  color: #ffffff;
+}
+.material-symbols--construction-rounded {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='m17.85 19.95l-4.425-4.425l2.1-2.1l4.425 4.425q.425.425.425 1.05t-.425 1.05t-1.05.425t-1.05-.425m-13.8 0q-.425-.425-.425-1.05t.425-1.05L9.9 12l-1.7-1.7q-.275.275-.7.275t-.7-.275l-.575-.575v2.25q0 .35-.3.475t-.55-.125L2.65 9.6q-.25-.25-.125-.55T3 8.75h2.25L4.7 8.2q-.3-.3-.3-.7t.3-.7l2.85-2.85q.5-.5 1.075-.725T9.8 3q.5 0 .938.15t.862.45q.2.125.213.35t-.163.4l-1.9 1.9l.55.55q.275.275.275.7t-.275.7L12 9.9l2.25-2.25q-.1-.275-.162-.575t-.063-.6q0-1.475 1.013-2.488t2.487-1.012q.2 0 .375.013t.35.062q.225.075.288.313t-.113.412L16.8 5.4q-.15.15-.15.35t.15.35l1.1 1.1q.15.15.35.15t.35-.15l1.625-1.625q.175-.175.413-.125t.312.3q.05.175.063.35t.012.375q0 1.475-1.012 2.487t-2.488 1.013q-.3 0-.6-.05t-.575-.175l-10.2 10.2q-.425.425-1.05.425t-1.05-.425'/%3E%3C/svg%3E");
+}
+.mdi--construction {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M12 15c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4M8 9a4 4 0 0 0 4 4a4 4 0 0 0 4-4m-4.5-7c-.3 0-.5.21-.5.5v3h-1V3s-2.25.86-2.25 3.75c0 0-.75.14-.75 1.25h10c-.05-1.11-.75-1.25-.75-1.25C16.25 3.86 14 3 14 3v2.5h-1v-3c0-.29-.19-.5-.5-.5z'/%3E%3C/svg%3E");
+}
+/*-----¿POR QUE ELEGIRNOS?-----*/
 .elg{
   background-color: #f2b452; 
   width: 100%;
   height: auto;
   margin: 0%;
   color: #ffffff;
-  font-size: 18px;
 }
 .elg h2{
   color: #ffffff;
   padding-top: 10%;
 }
 .elg .w3-row {
-  /*display: flex;*/
   align-items: center;  
   justify-content: center; 
   text-align: center;
@@ -202,7 +236,7 @@ header .w3-row {
 
 /*-----NUESTROS PROYECTOS-----*/
 .galery{
-  background-color: #8fa4aa;
+  background-color: #5b7389;
   padding: 2%;
 }
 .galery h2{
@@ -211,7 +245,8 @@ header .w3-row {
 }
 .card{
   border: 8px solid #ffffff;
-  border-radius: 10px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.452); 
 }
 .card h4{
   font-family: 'Montserrat';
@@ -225,7 +260,7 @@ header .w3-row {
   filter: brightness(1.2); 
 }
 .galery button{
-  background-color: #354a68;
+  background-color: #9aa3ad;
   font-size: 20px;
   color: #ffffff;
 }
