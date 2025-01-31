@@ -45,10 +45,10 @@
                 </p>
                 <br>
                 <a href="tel:+2222465385">
-                    <button type="submit" class="w3-btn w3-round-large btn"><i class='fas fa-phone fa-flip-horizontal'></i> Llámanos
+                    <button type="submit" class="w3-btn w3-round-large btndark"><i class='fas fa-phone fa-flip-horizontal'></i> Llámanos
                     </button></a>
                 <a href="https://wa.me/2213565304">
-                    <button type="submit" class="w3-btn w3-round-large btn"><i class="fa fa-whatsapp"></i> Contáctanos
+                    <button type="submit" class="w3-btn w3-round-large btndark"><i class="fa fa-whatsapp"></i> Contáctanos
                     </button></a>
             </div>
             <div class="w3-container w3-half">
@@ -90,7 +90,7 @@
                 <h2>Cómo funcionan nuestros servicios</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <a href="https://riansoluciones.com/"><button type="submit" class="w3-btn w3-round-xxlarge">Ver más</button></a>  
+                <a href="https://riansoluciones.com/"><button type="submit" class="w3-btn w3-round-xxlarge btndark">Ver más</button></a>  
             </div>
             <div class="w3-container w3-half">
                 <div class="w3-container mt-3 video-container">
@@ -157,6 +157,7 @@
                 </center> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <br>
             </div>
         </div>
 
@@ -210,52 +211,67 @@
             </div>
         </center> 
         </div>
-        <br>
+        <br><br>
 
         <!----- NUESTROS PROYECTOS ----->
         <div class="galery">
             <center>
-            <h2>Nuestros proyectos</h2>
-            <div class="w3-row">
-                <div class="w3-third w3-container">
-                    <div class="card mx-auto mb-3 image-effect">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGii2iNqRrEZzlcM0DZDbYz7lQzVQf1t1FWA&s" 
-                        alt="Card image" style="width: 100%;">
-                        <div class="card-body text-center">
-                        <div class="card-body">
-                        <h4 class="card-title">Proyecto 1</h4>
+                <h2>Nuestros proyectos</h2>
+                <div class="w3-row">
+                    <div class="w3-third w3-container">
+                        <div class="card mx-auto mb-3 image-effect project-card" data-project="dublin">
+                            <img class="card-img-top" src="https://riansoluciones.com/wp-content/uploads/2023/01/DUBLIN-PORT.png" 
+                            alt="Casa Dublín" style="width: 100%;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Casa Dublín</h4>
+                            </div>
                         </div>
+                    </div>
+                    <div class="w3-third w3-container">
+                        <div class="card mx-auto mb-3 image-effect project-card" data-project="toscana">
+                            <img class="card-img-top" src="https://riansoluciones.com/wp-content/uploads/2023/01/TOSCANA-PORT.png" 
+                            alt="Toscana" style="width: 100%;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Toscana</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-container">
+                        <div class="card mx-auto mb-3 image-effect project-card" data-project="fratelli">
+                            <img class="card-img-top" src="https://riansoluciones.com/wp-content/uploads/2023/01/CUETARA.png"
+                            alt="Casa Fratelli" style="width: 100%;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Casa Fratelli</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w3-third w3-container">
-                    <div class="card mx-auto mb-3 image-effect">
-                        <img class="card-img-top" src="https://www.rentaoventa.com/blog-inmobiliario/wp-content/uploads/2021/08/comprar-casa-en-el-estado-de-mexico.jpg" 
-                        alt="Card image" style="width: 100%;">
-                        <div class="card-body text-center">
-                        <div class="card-body">
-                        <h4 class="card-title">Proyecto 2</h4>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-third w3-container">
-                    <div class="card mx-auto mb-3 image-effect">
-                        <img class="card-img-top" src="https://images.adsttc.com/media/images/6424/6702/ce5e/6c01/708c/314a/newsletter/casa-tome-mxtad-plus-tulugax_1.jpg?1680107332"
-                        alt="Card image" style="width: 100%;">
-                        <div class="card-body text-center">
-                        <div class="card-body">
-                        <h4 class="card-title">Proyecto 3</h4>
-                        </div>
+            <a href="https://riansoluciones.com/galeria-de-proyectos/">
+                <button type="submit" class="w3-btn w3-round-xxlarge bContact">Ver más</button>
+            </a>
+        </center>
+        </div>
+
+        <!----- MODAL CON CARRUSEL ----->
+        <div class="modal fade" id="imageCarouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carousel-images"></div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="https://riansoluciones.com/galeria-de-proyectos/"><button type="submit" class="w3-btn w3-round-xxlarge">Ver más</button></a>
-            </center>
-        </div>
-
+        </div>    
         <br>
+
         <!----- OPINIÓN CLIENTES ----->
         <div class="clientes">
             <h2>
@@ -339,8 +355,8 @@
                             <input type="text" class="form-control" id="num" placeholder="000 000 00 00" name="num" required>
                         </div>
                         <center>
-                            <button type="submit" class="w3-btn w3-round-xxlarge">Enviar</button>
-                            <button type="reset" class="w3-btn w3-round-xxlarge">Borrar</button>
+                            <button type="submit" class="w3-btn w3-round-xxlarge btndark">Enviar</button>
+                            <button type="reset" class="w3-btn w3-round-xxlarge btndark">Borrar</button>
                         </center>
                     </form>
                 </div>
