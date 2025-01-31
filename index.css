@@ -23,6 +23,17 @@ h2{
   font-weight: 600;
 }
 
+.btndark{
+  background-color: #354a68;
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btndark:hover{
+  background-color: #00b2ff;
+  color: #ffffff;
+}
+
 .ir-arriba { /*Botón de desplazamiento hacia arriba */
   position: fixed;
   bottom: 20px; 
@@ -45,7 +56,6 @@ h2{
 .nav{
   background-color: #2f3a47;
   align-items: center;
-  z-index: 1000; 
 }
 .nav img {
   width: 20%;
@@ -56,6 +66,7 @@ h2{
   z-index: 1000;
   background: white;
 }
+
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
   color: #ffffff;
@@ -87,16 +98,6 @@ header .w3-row {
 .header-bg p{
   font-size: 16px;
   margin-top: 3%;
-}
-.header-bg button{
-  background-color: #354a68;
-  font-size: 17px;
-  color: #ffffff;
-  text-decoration: none;
-}
-.header-bg button:hover{
-  background-color: #00b2ff;
-  color: #ffffff;
 }
 .sec1 img{
   width: 90%;
@@ -140,14 +141,6 @@ header .w3-row {
 /*-----NUESTRA OFERTA-----*/
 .oferta{
   padding-left: 3%;
-}
-.oferta button{
-  background-color: #354a68;
-  color: #ffffff;
-  margin-bottom: 3%;
-}
-.oferta button:hover{
-  background-color: #00b2ff;
 }
 
 /*-----SOBRE NOSOTROS-----*/
@@ -242,7 +235,7 @@ header .w3-row {
 /*-----NUESTROS PROYECTOS-----*/
 .galery{
   background-color: #5b7389;
-  padding: 2%;
+  padding: 1%;
 }
 .galery h2{
   color: #ffffff;
@@ -264,13 +257,26 @@ header .w3-row {
   transform: scale(1.1); 
   filter: brightness(1.2); 
 }
-.galery button{
-  background-color: #9aa3ad;
-  font-size: 20px;
-  color: #ffffff;
+.carousel-item img {
+  max-width: 100%;      
+  max-height: 90vh;     
+  width: auto;          
+  height: auto;         
+  margin: auto;         
+  display: block;       
+  object-fit: contain;  
 }
-.galery button:hover{
-  background-color: #00b2ff;
+.modal-dialog {
+  max-width: 60%;
+  max-height: 70vh;
+}
+.modal-content {
+  background: transparent; 
+  border: none; 
+  box-shadow: none; 
+}
+.modal-body {
+  padding: 0;
 }
 
 /*-----CLIENTES-----*/
@@ -316,10 +322,6 @@ header .w3-row {
   font-size: 16px;
   margin: 0;
   text-align: left;
-}
-.form2 button{
-  background-color: #354a68;
-  color: #ffffff;
 }
 
 /*-----VIDEO-----*/
