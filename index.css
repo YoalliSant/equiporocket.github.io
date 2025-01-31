@@ -258,51 +258,29 @@ header .w3-row {
   filter: brightness(1.2); 
 }
 
-/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) { 
   .modal-dialog {
-    max-width: 100%;  /* El modal ocupa todo el ancho en móviles */
-    width: 100%;
-    margin: 0;
-    height: auto;     /* Ajustamos la altura */
-  }
-  .modal-body {
-    padding: 0;
-    overflow: hidden; /* Evitamos desbordes */
-  }
-  .carousel-inner {
-    display: flex;
-    justify-content: center; /* Centra los elementos */
-    align-items: center; /* Centra verticalmente */
-  }
-  .carousel-item img {
-    max-width: 90%;  /* Usamos un 90% para que no se vea demasiado pequeña */
-    max-height: 80vh; /* Ajuste de altura máxima */
-    width: auto;      /* Mantiene la relación de aspecto */
-    height: auto;
-    margin: auto;     /* Centrado de la imagen */
-    object-fit: contain;
+    max-width: 95%;  /* Ocupar más espacio en pantallas pequeñas */
+    max-height: 85vh;
   }
 }
-/* Ajustes generales para pantallas grandes */
+.carousel-item img {
+  max-width: 100%;      
+  max-height: 80vh;  /* Reducido para que no se corte en móviles */
+  width: auto;          
+  height: auto;         
+  margin: auto;         
+  display: block;       
+  object-fit: contain;  
+}
 .modal-dialog {
   max-width: 60%;
   max-height: 70vh;
 }
-
-.carousel-item img {
-  max-width: 100%;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  margin: auto;
-  display: block;
-  object-fit: contain;
-}
 .modal-content {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  background: transparent; 
+  border: none; 
+  box-shadow: none; 
 }
 .modal-body {
   padding: 0;
