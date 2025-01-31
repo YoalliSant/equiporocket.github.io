@@ -229,7 +229,8 @@ header .w3-row {
 }
 .elg .w3-container{
   flex: 1;
-  padding: 0;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /*-----NUESTROS PROYECTOS-----*/
