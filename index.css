@@ -50,7 +50,12 @@ h2{
 .nav img {
   width: 20%;
 }
-
+.w3-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+}
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
   color: #ffffff;
