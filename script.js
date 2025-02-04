@@ -21,6 +21,22 @@ window.onbeforeunload = () => {
     }
 }
 
+// --- CALCULADORA PRECIO POR CONSTRUIR ---
+function calcularCosto() {
+    let metros = document.getElementById("metros").value;
+    let tipo = document.getElementById("tipo").value.split("-");
+    
+    if (metros <= 0 || isNaN(metros)) {
+        document.getElementById("resultado").innerText = "Por favor, ingresa un número válido de metros cuadrados.";
+        return;
+    }
+    
+    let costoMin = metros * parseInt(tipo[0]);
+    let costoMax = metros * parseInt(tipo[1]);
+    
+    document.getElementById("resultado").innerText = `Costo estimado: $${costoMin.toLocaleString()} - $${costoMax.toLocaleString()} MXN`;
+}
+
 // --- GALERIA DE PROYECTOS ---
 document.addEventListener("DOMContentLoaded", function () {
     //galerías de imágenes por proyecto
