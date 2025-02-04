@@ -54,11 +54,13 @@ h2{
 
 /*-----BARRA DE NAVEGACIÓN-----*/
 .nav{
+  display: flex;
   background-color: #2f3a47;
   align-items: center;
+  justify-content: center;
 }
 .nav img {
-  width: 20%;
+  width: 25%;
 }
 .w3-top {
   position: fixed;
@@ -66,13 +68,31 @@ h2{
   z-index: 1000;
   background: white;
 }
-
 .bContact{ /*boton de Contacto y de formulario*/
   background-color: #8fa4aa;
   color: #ffffff;
 }
 .bContact:hover{
   background-color: #00b2ff;
+}
+.bContact2{ /*boton de Contacto y de formulario*/
+  background-color: #8fa4aa;
+  color: #ffffff;
+}
+.bContact2:hover{
+  background-color: #00b2ff;
+}
+
+/* Diseño para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .bContact2 {
+      font-size: 0; /* Oculta el texto */
+      padding: 10px;
+  }
+
+  .bContact2 i {
+      font-size: 20px; /* Mantiene visible solo el icono */
+  }
 }
 
 /*-----HEADER FONDO-----*/
@@ -206,7 +226,14 @@ header .w3-row {
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M12 15c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4M8 9a4 4 0 0 0 4 4a4 4 0 0 0 4-4m-4.5-7c-.3 0-.5.21-.5.5v3h-1V3s-2.25.86-2.25 3.75c0 0-.75.14-.75 1.25h10c-.05-1.11-.75-1.25-.75-1.25C16.25 3.86 14 3 14 3v2.5h-1v-3c0-.29-.19-.5-.5-.5z'/%3E%3C/svg%3E");
 }
-/*-----¿POR QUE ELEGIRNOS?-----*/
+
+/*-----PROYECTO ARQUITECTONICO-----*/
+.proyarqu p{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*-----¿CUANTO CUESTA UN PLANO?-----*/
 .elg{
   background-color: #f2b452; 
   width: 100%;
@@ -231,6 +258,29 @@ header .w3-row {
   flex: 1;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+/*-----CALCULADORA-----*/
+.calculator {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #dddcdc;
+}
+.calculator select, .calculator input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+#resultado {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.calculator label{
+  font-size: 18px;
 }
 
 /*-----NUESTROS PROYECTOS-----*/
@@ -259,15 +309,15 @@ header .w3-row {
   filter: brightness(1.2); 
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) { /*carrusel de fotos */
   .modal-dialog {
-    max-width: 95%;  /* Ocupar más espacio en pantallas pequeñas */
+    max-width: 95%;  
     max-height: 85vh;
   }
 }
 .carousel-item img {
   max-width: 100%;      
-  max-height: 80vh;  /* Reducido para que no se corte en móviles */
+  max-height: 80vh; 
   width: auto;          
   height: auto;         
   margin: auto;         
@@ -286,7 +336,6 @@ header .w3-row {
 .modal-body {
   padding: 0;
 }
-
 
 /*-----CLIENTES-----*/
 .clientes{
@@ -310,7 +359,6 @@ header .w3-row {
   background-color: #354a68;
   margin: 0;
   flex-wrap: wrap;
-  /*display: flex;*/
   align-items: center;  
   justify-content: center; 
   text-align: center;
