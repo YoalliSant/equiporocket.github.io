@@ -17,7 +17,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
         <script src="script.js"></script>
-        <link rel="stylesheet" type="text/css" href="index.css" href="https://fonts.google.com/specimen/Montserrat">
+        <link rel="stylesheet" type="text/css" href="index.css">
         <title>Rian Soluciones</title>
         <link rel="icon" type="image/png" href="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png">
     </head>
@@ -27,7 +27,7 @@
         <div class="w3-top">
             <div class="w3-bar w3-center nav">
                 <a href="" style="width:50%" class="w3-bar-item w3-mobile">
-                    <img src="https://riansoluciones.com/wp-content/uploads/2025/01/2_LOGO_Color_envolvente.png"></a> 
+                    <img src="https://riansoluciones.com/wp-content/uploads/2025/01/2_LOGO_Color_envolvente.png" loading="lazy"></a> 
 
                 <a href="#contacto" class="w3-bar-item">
                     <input type="button" class="w3-btn w3-round-xxlarge bContact" value="Contáctanos"></a>
@@ -47,7 +47,7 @@
             <div class="w3-container w3-half">
                 <br>
                 <h1><b>Entendemos tus necesidades,
-                <span class="yellow">Creamos soluciones</b></span>
+                creamos <span class="yellow">soluciones</b></span>
                 
                 <p><b>Nuestro objetivo es lograr más con menos, siempre entender tus necesidades y proponer 
                         la mejor solución que permita cumplirlas.</b>
@@ -61,7 +61,7 @@
                     </button></a>
             </div>
             <div class="w3-container w3-half">
-                <img src="https://riansoluciones.com/wp-content/uploads/2025/01/Ingeniero-Ivan-Sotomayor-CELULAR.png">
+                <img src="https://riansoluciones.com/wp-content/uploads/2025/01/Ingeniero-Ivan-Sotomayor-CELULAR.png" loading="lazy">
             </div>
         </div>   
     </header>
@@ -94,18 +94,10 @@
         </div>
 
         <!----- NUESTRA OFERTA ----->
-        <div class="w3-row">
-            <div class="w3-container w3-half oferta">
-                <h2>Cómo funcionan nuestros servicios</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <a href="https://riansoluciones.com/"><button type="submit" class="w3-btn w3-round-xxlarge btndark">Ver más</button></a>  
-            </div>
-            <div class="w3-container w3-half">
-                <div class="w3-container mt-3 video-container">
-                    <iframe src="https://www.youtube.com/embed/3kvuaKeFEVU?si=jJ-OcAjcZZ4ASz_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+        <div class="w3-container">
+            <center><h2>Cómo funcionan nuestros servicios</h2></center>
+            <iframe src="timeline.html" width="100%" height="500px" style="border: none;"></iframe>
+   
         </div>
 
         <!----- SOBRE NOSOTROS ----->
@@ -125,11 +117,11 @@
         <!----- ¿CUANTO CUESTA UN PLANO? ----->
         <div class="elg">
             <div class="w3-row">
-                <div class="w3-container w3-half">
+                <div class="w3-container w3-half row2">
                     <img src="https://riansoluciones.com/wp-content/uploads/2023/03/pexels-matej-716661-scaled.jpg" 
-                    style="width: 100%; height: auto;"> 
+                    style="width: 100%; height: auto;" loading="lazy"> 
                 </div>
-                <div class="w3-container w3-half">
+                <div class="w3-container w3-half row1">
                     <h2>¿Cuál es el costo de elaborar un plano?</h2>
                     <p>Esta es una pregunta que recibimos con frecuencia. Aunque parece tan simple como un dibujo 
                         hecho con regla sobre papel, en realidad es mucho más que eso. El costo de realizar un plano 
@@ -188,7 +180,8 @@
                     <center><button class="w3-btn w3-round-large btndark" onclick="calcularCosto()">Calcular</button>
                     <p id="resultado"></p></center>
                 </div>
-                <br><br>
+                <br>
+                <br>
             </div>
         </div>
 
@@ -254,7 +247,7 @@
                     <div class="w3-third w3-container">
                         <div class="card mx-auto mb-3 image-effect project-card" data-project="dublin">
                             <img class="card-img-top" src="https://riansoluciones.com/wp-content/uploads/2023/01/DUBLIN-PORT.png" 
-                            alt="Casa Dublín" style="width: 100%;">
+                            alt="Casa Dublín" style="width: 100%;" loading="lazy">
                             <div class="card-body text-center">
                                 <h4 class="card-title">Casa Dublín</h4>
                             </div>
@@ -263,7 +256,7 @@
                     <div class="w3-third w3-container">
                         <div class="card mx-auto mb-3 image-effect project-card" data-project="toscana">
                             <img class="card-img-top" src="https://riansoluciones.com/wp-content/uploads/2023/01/TOSCANA-PORT.png" 
-                            alt="Toscana" style="width: 100%;">
+                            alt="Toscana" style="width: 100%;" loading="lazy">
                             <div class="card-body text-center">
                                 <h4 class="card-title">Toscana</h4>
                             </div>
@@ -272,7 +265,7 @@
                     <div class="w3-third w3-container">
                         <div class="card mx-auto mb-3 image-effect project-card" data-project="fratelli">
                             <img class="card-img-top" src="https://riansoluciones.com/wp-content/uploads/2023/01/CUETARA.png"
-                            alt="Casa Fratelli" style="width: 100%;">
+                            alt="Casa Fratelli" style="width: 100%;" loading="lazy">
                             <div class="card-body text-center">
                                 <h4 class="card-title">Casa Fratelli</h4>
                             </div>
@@ -319,7 +312,7 @@
                     <div class="card mx-auto mb-3 w3-theme-l1">
 
                         <img class="card-img-top w3-circle" src="https://riansoluciones.com/wp-content/uploads/2025/01/Captura-de-pantalla-2025-01-31-124054.png" 
-                        alt="Card image" style="width: 60%;">
+                        alt="Card image" style="width: 60%;" loading="lazy">
 
                         <div class="card-body text-center">
                         <div class="card-body">
@@ -335,7 +328,7 @@
                     <div class="card mx-auto mb-3">
 
                         <img class="card-img-top w3-circle" src="https://riansoluciones.com/wp-content/uploads/2023/02/cropped-yasen.png" 
-                        alt="Card image" style="width: 66%;">
+                        alt="Card image" style="width: 66%;" loading="lazy">
 
                         <div class="card-body text-center">
                         <div class="card-body">
@@ -350,7 +343,7 @@
                     <div class="card mx-auto mb-3 w3-theme-l1">
 
                         <img class="card-img-top w3-circle" src="https://riansoluciones.com/wp-content/uploads/2023/02/Dublin-1.png"
-                        alt="Card image" style="width: 60%;">
+                        alt="Card image" style="width: 60%;" loading="lazy">
 
                         <div class="card-body text-center">
                         <div class="card-body">
@@ -403,7 +396,7 @@
     <footer>
         <div class="w3-container">
             <br>
-                <center><img src="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png" style="width: 10%;"></center>
+                <center><img src="https://riansoluciones.com/wp-content/uploads/2025/01/1_LOGO_Blanco.png" style="width: 10%;" loading="lazy"></center>
             <div class="w3-row">
                 <div class="w3-third w3-container">
                     <center>
