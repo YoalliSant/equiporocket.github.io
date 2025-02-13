@@ -1,108 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
 }
-body{
+
+body {
   min-height: 100vh;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("https://t3.ftcdn.net/jpg/05/15/29/74/360_F_515297408_GRDBJY7xu6b5di37wldGRrJ2Y2Coyzp7.jpg");
+  padding: 20px;
 }
-.container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 430px;
+
+.container {
   width: 100%;
+  max-width: 400px;
   background: #0E0E0E;
+  padding: 2rem;
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.521);
   color: #fff;
-  margin-right: 2%;
-    margin-left: 2%;
+  text-align: center;
 }
-.container .registration{
+header{
+  font-size: 26px;
+}
+.container .registration {
   display: none;
 }
-#check:checked ~ .registration{
+
+#check:checked ~ .registration {
   display: block;
 }
-#check:checked ~ .login{
+
+#check:checked ~ .login {
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-.container .form{
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+
+.form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  outline: none;
 }
-.form header{
-  font-size: 25px;
+
+.form input.button {
+  background: #009579;
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: 500;
-  text-align: center;
-  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 10px;
 }
- .form input{
-   height: 50px;
-   width: 100%;
-   padding: 0 15px;
-   font-size: 17px;
-   margin-bottom: 1.3rem;
-   border: 1px solid #ddd;
-   border-radius: 30px;
-   outline: none;
- }
- .form input:focus{
-   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
- }
-.form a{
+
+.form input.button:hover {
+  background: #006653;
+}
+
+.form a {
   font-size: 16px;
   color: #009579;
   text-decoration: none;
 }
-.form a:hover{
+
+.form a:hover {
   text-decoration: underline;
 }
-.form input.button{
-  color: #fff;
-  background: #009579;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin-top: 1.7rem;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.form input.button:hover{
-  background: #006653;
-}
-.signup{
+
+.signup {
   font-size: 17px;
-  text-align: center;
+  margin-top: 1rem;
 }
-.signup label{
+
+.signup label {
   color: #009579;
   cursor: pointer;
 }
-.signup label:hover{
+
+.signup label:hover {
   text-decoration: underline;
 }
-/* RESPONSIVO 
+
 @media (max-width: 600px) {
   .container {
-    width: 95%;
-    padding: 15px;
-    margin-right: 2%;
-    margin-left: 2%;
+    width: 90%;
+    padding: 1.5rem;
   }
-}*/
-
+  .form input {
+    font-size: 16px;
+  }
+  .form input.button {
+    font-size: 1rem;
+  }
+  .signup {
+    font-size: 15px;
+  }
+}
 
 .solar--inbox-archive-bold {
   display: inline-block;
