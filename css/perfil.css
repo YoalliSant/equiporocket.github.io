@@ -103,6 +103,15 @@ a {
     width: 100%;
     margin-top: 15px;
 }
+@media (min-width: 600px) {
+    .botones {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container-user button {
+        width: 48%; 
+    }
+}
 .barra-decorativa {
     width: 28px;
     background-color: #009579;
@@ -128,13 +137,6 @@ a {
     .container {
         flex-direction: column;
         align-items: center;
-    }
-    .botones {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .container-user button {
-        width: 48%; 
     }
 }
 
