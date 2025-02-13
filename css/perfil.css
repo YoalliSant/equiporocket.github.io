@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Itim&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    background-image: url("https://t3.ftcdn.net/jpg/05/15/29/74/360_F_515297408_GRDBJY7xu6b5di37wldGRrJ2Y2Coyzp7.jpg");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.nav {
+    display: flex;
+    background-color: #0E0E0E;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    flex-wrap: nowrap; /*que no se apilen*/
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap; /*que los elementos no se partan*/
+    text-decoration: none;
+}
+.nav h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem; /*para que quepa en moviles*/
+    font-family: "Raleway", sans-serif;
+}
+.nav-right {
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+
+/* PERFIL DE USUARIO */
+.container-user {
+    display: flex;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.822);
+    color: #fff;
+    position: relative;
+}
+.container-user h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+.container-user label {
+    display: block;
+    font-size: 16px;
+    margin: 0px 15px 5px;
+    color: #fff;
+}
+.container-user input {
+    height: 50px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+}
+.container-user button {
+    width: 25%;
+    padding: 5px;
+    margin: 3px;
+    background-color: #6921ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Raleway", sans-serif;
+    border: none;
+}
+.container-user button:hover {
+    background-color: #3a01b6;
+}
+.barra-decorativa {
+    width: 28px;
+    background-color: #009579;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.contenido {
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .nav h1 {
+        font-size: 1.5rem; 
+    }    
+    .nav-right {
+        font-size: 20px; 
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.solar--inbox-archive-bold {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23009579' fill-rule='evenodd' d='M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12m3-3.5v-1A1.5 1.5 0 0 1 6.5 6h11A1.5 1.5 0 0 1 19 7.5v1a2.5 2.5 0 0 0-1.5-.5h-11c-.563 0-1.082.186-1.5.5m0 2v1a2.5 2.5 0 0 1 1.5-.5h11a2.5 2.5 0 0 1 1.5.5v-1A1.5 1.5 0 0 0 17.5 9h-11A1.5 1.5 0 0 0 5 10.5m15 3.75a.75.75 0 1 1 0 1.5h-2.343c-.879 0-1.11.013-1.307.095c-.198.082-.37.236-.991.857l-.305.305c-.432.432-.773.774-1.207.98q-.122.057-.248.102c-.453.162-.936.162-1.547.161h-.218c-.646 0-1.157.001-1.63-.178a3 3 0 0 1-.26-.114c-.452-.227-.797-.603-1.235-1.079l-.11-.121c-.59-.64-.753-.799-.944-.889l-.061-.027c-.195-.079-.424-.092-1.293-.092H4a.75.75 0 0 1 0-1.5h1.02v-1A1.5 1.5 0 0 1 6.5 12h11a1.5 1.5 0 0 1 1.48 1.25v1z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  }
+  .qlementine-icons--user-16 {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='white' d='M11 7c0 1.66-1.34 3-3 3S5 8.66 5 7s1.34-3 3-3s3 1.34 3 3'/%3E%3Cpath fill='white' fill-rule='evenodd' d='M16 8c0 4.42-3.58 8-8 8s-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8M4 13.75C4.16 13.484 5.71 11 7.99 11c2.27 0 3.83 2.49 3.99 2.75A6.98 6.98 0 0 0 14.99 8c0-3.87-3.13-7-7-7s-7 3.13-7 7c0 2.38 1.19 4.49 3.01 5.75' clip-rule='evenodd'/%3E%3C/svg%3E");
+  }
