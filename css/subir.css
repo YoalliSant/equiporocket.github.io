@@ -38,19 +38,37 @@ body {
 a {
     text-decoration: none;
 }
+
+/* SUBIR DOCUMENTOS */
 .container { 
     max-width: 400px; 
     margin: auto; 
-    background: white; 
+    background: #1a1a1a; 
     padding: 20px; 
     border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-        
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.521);
+    color: #fff;
+}     
 input, button { 
-    width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ddd; }
-        button { background-color: #28a745; color: white; border: none; cursor: pointer; }
-        button:hover { background-color: #218838; }
+    width: 100%; 
+    padding: 10px; 
+    margin: 8px 0; 
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}  
+button { 
+    background-color: #009579; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+button:hover { 
+    background-color: #006653; 
+}
 
 
 /* RESPONSIVO */
