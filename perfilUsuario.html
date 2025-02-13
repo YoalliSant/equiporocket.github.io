@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Perfil de Usuario</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+     <!-- Barra de Navegación -->
+     <div class="nav">
+        <div class="nav-left">
+            <span class="solar--inbox-archive-bold"></span>
+            <a href="dashboard.html">
+                <h1>FileGuard</h1>
+            </a>
+        </div> 
+    
+        <a href="perfilUsuario.html" class="nav-right">
+            <span class="qlementine-icons--user-16"></span>
+        </a>
+    </div>
+
+    <br>
+
+    <div class="container-user">
+
+        <div class="barra-decorativa"></div>
+        <div class="contenido">
+        
+        <h2>Perfil de Usuario</h2>
+        
+        <label for="user-name">Nombre de usuario: </label>
+        <input type="text" name="name">
+
+        <label for="user-email">Correo: </label>
+        <input type="email" name="email">
+
+        <label for="user-pass">Contraseña: </label>
+        <input type="password" name="pass">
+
+        <button>Guardar cambios</button>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+        
+    </div>
+
+    <br><br>
+
+</body>
+</html>
