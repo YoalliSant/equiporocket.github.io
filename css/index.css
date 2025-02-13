@@ -91,6 +91,16 @@ body{
 .signup label:hover{
   text-decoration: underline;
 }
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
 
 .solar--inbox-archive-bold {
   display: inline-block;
