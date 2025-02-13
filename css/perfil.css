@@ -80,9 +80,9 @@ a {
     outline: none;
 }
 .container-user button {
-    width: 25%;
-    padding: 5px;
-    margin: 3px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
     background-color: #6921ff;
     color: white;
     font-size: 16px;
@@ -91,9 +91,17 @@ a {
     transition: background-color 0.3s ease;
     font-family: "Raleway", sans-serif;
     border: none;
+    text-align: center;
 }
 .container-user button:hover {
     background-color: #3a01b6;
+}
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
 }
 .barra-decorativa {
     width: 28px;
@@ -120,6 +128,13 @@ a {
     .container {
         flex-direction: column;
         align-items: center;
+    }
+    .botones {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container-user button {
+        width: 48%; 
     }
 }
 
