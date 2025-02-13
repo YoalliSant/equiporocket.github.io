@@ -21,6 +21,8 @@ body{
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.521);
   color: #fff;
+  margin-right: 2%;
+    margin-left: 2%;
 }
 .container .registration{
   display: none;
@@ -91,7 +93,7 @@ body{
 .signup label:hover{
   text-decoration: underline;
 }
-/* RESPONSIVO */
+/* RESPONSIVO 
 @media (max-width: 600px) {
   .container {
     width: 95%;
@@ -99,7 +101,7 @@ body{
     margin-right: 2%;
     margin-left: 2%;
   }
-}
+}*/
 
 
 .solar--inbox-archive-bold {
