@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Lista de Documentos</title>
     <link rel="stylesheet" href="css/verdoc.css">
 </head>
@@ -25,21 +26,23 @@
         <br><br><br>
 
     <div class="cont-header">
-        <h2>Lista de Documentos</h2>
+        <h2>Lista de documentos</h2>
     </div>
     <div class="container">
-        <div class="document">
-            <span>Contrato.pdf</span>
-            <button>Eliminar</button>
-        </div>
-        <div class="document">
-            <span>Reporte.xlsx</span>
-            <button>Eliminar</button>
-        </div>
-        <div class="document">
-            <span>Proyecto.docx</span>
-            <button>Eliminar</button>
-        </div>
+        <table class="w3-table w3-bordered">
+            <tr>
+              <th>Documento</th>
+              <th>Tipo</th>
+              <th>Descripción</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Proyecto.docx</td>
+              <td>Word</td>
+              <td>Ejemplo de documento</td>
+              <td><button>Eliminar</button></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
