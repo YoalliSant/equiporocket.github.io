@@ -57,6 +57,9 @@ a {
         align-items: center;
         width: 85%;
     }
+    .w3-table{
+        width: 85%;
+    }
 }
 
 .container { 
