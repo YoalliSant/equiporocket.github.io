@@ -22,12 +22,26 @@
     </div>
 
     <br><br><br>
-    <div class="container">
-        <CENTER>
-            <h2>Subir Documento</h2>
-        </CENTER>
-        <input type="file" accept=".pdf, .docx, .xlsx">
-        <button>Subir Archivo</button>
+        <div class="container">
+        <center>
+        <h2>Subir Documento</h2>
+        </center>
+        <br>
+        <label for="file-upload">Seleccione un archivo:</label>
+        <input type="file" id="file-upload" accept=".pdf, .docx, .xlsx">
+        <br><br>
+        <label for="category">Tipo de documento: </label>
+        <select id="category">
+            <option>PDF</option>
+            <option>Word</option>
+            <option>Excel</option>
+        </select>
+        <br><br>
+        <label for="description">Descripción:</label>
+        <br>
+        <textarea id="description" rows="3" placeholder=" Escribe una breve descripción..."></textarea>
+
+        <button onclick="uploadFile()">Subir Archivo</button>
     </div>
 </body>
 </html>
