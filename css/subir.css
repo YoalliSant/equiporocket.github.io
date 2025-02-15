@@ -41,23 +41,45 @@ a {
 
 /* SUBIR DOCUMENTOS */
 .container { 
-    max-width: 400px; 
+    max-width: 500px; 
     margin: auto; 
     background: #1a1a1a; 
-    padding: 20px; 
+    padding: 30px; 
     border-radius: 8px; 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.521);
     color: #fff;
-}     
+}  
+label{
+    
+    font-weight: 600;
+}  
 input, button { 
     width: 100%; 
     padding: 10px; 
     margin: 8px 0; 
-    border-radius: 5px; 
-    border: 1px solid #ddd; 
+    border-radius: 18px; 
+    border: 2px solid #009579; 
     font-family: "Raleway", sans-serif;
-    font-size: 14px;
-}  
+    font-size: 16px;
+} 
+select{
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #009579; 
+    color: #fff;
+    background-color: #1a1a1a;
+} 
+textarea{
+    margin-top: 4px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #009579; 
+    resize: none;
+}
 button { 
     background-color: #009579; 
     color: white; 
